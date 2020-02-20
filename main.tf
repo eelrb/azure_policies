@@ -33,7 +33,7 @@ PARAMETERS
 }
 
 resource "azurerm_policy_definition" "blee-policy-1" {
-  name         = "Audit-RequiredTag-Resource"
+  name         = "blee-policy-1"
   display_name = "Audit a Required Tag on a Resource"
   description  = "Audit all resources for a required tag"
   policy_type  = "Custom"
@@ -43,7 +43,7 @@ resource "azurerm_policy_definition" "blee-policy-1" {
 }
 
 resource "azurerm_policy_definition" "blee-policy-2" {
-  name         = "Audit-RequiredTag-Resource"
+  name         = "blee-policy-2"
   display_name = "Audit a Required Tag on a Resource"
   description  = "Audit all resources for a required tag"
   policy_type  = "Custom"
@@ -53,7 +53,7 @@ resource "azurerm_policy_definition" "blee-policy-2" {
 }
 
 resource "azurerm_policy_definition" "blee-policy-3" {
-  name         = "Audit-RequiredTag-Resource"
+  name         = "blee-policy-3"
   display_name = "Audit a Required Tag on a Resource"
   description  = "Audit all resources for a required tag"
   policy_type  = "Custom"
