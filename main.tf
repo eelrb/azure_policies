@@ -4,7 +4,7 @@ provider "azurerm" {
 }
 
 # Define Azure Policy Definition
-resource "azurerm_policy_definition" "policy" {
+resource "azurerm_policy_definition" "blee-policy" {
   name         = "PaC-Naming-Convention"
   policy_type  = "Custom"
   mode         = "Indexed"
