@@ -40,5 +40,4 @@ resource "azurerm_policy_definition" "requiredTag" {
   mode         = "All"
   policy_rule  = "${data.template_file.requiredTag_policy_rule.rendered}"
   parameters   = "${data.template_file.requiredTag_policy_parameters.rendered}"
-
 }
