@@ -52,9 +52,9 @@ PARAMETERS
 }
 
 # Define Azure Policy Assignment
-resource "azurerm_policy_assignment" "policy-assignment" {
+resource "azurerm_policy_assignment" "blee-policy-assignment" {
   name                 = "Naming-Convention-Assignment"
-  scope                = "/subscriptions/00000000-0000-0000-0000-000000000000"
+  scope                = "/subscriptions/00000001-0001-0001-0001-000000000001"
   policy_definition_id = "${azurerm_policy_definition.policy.id}"
   description          = "Naming convention for VM"
   display_name         = "Naming-Convention-Assignment"
