@@ -9,7 +9,7 @@ data "template_file" "requiredTag_policy_rule" {
 {
     "if": {
         "field": "[concat('tags[', parameters('tagName'), ']')]",
-        "exists": "false"
+        "exists": "true"
     },
     "then": {
         "effect": "audit"
