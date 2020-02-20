@@ -1,6 +1,6 @@
 # Configure the Microsoft Azure Provider.
 provider "azurerm" {
-    version = "=1.30.0"
+    version = "=1.44.0"
 }
 
 data "template_file" "requiredTag_policy_rule" {
