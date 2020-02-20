@@ -50,3 +50,20 @@ POLICY_RULE
   }
 PARAMETERS
 }
+
+# Define Azure Policy Assignment
+resource "azurerm_policy_assignment" "policy-assignment" {
+  name                 = "Naming-Convention-Assignment"
+  scope                = "/subscriptions/00000000-0000-0000-0000-000000000000"
+  policy_definition_id = "${azurerm_policy_definition.policy.id}"
+  description          = "Naming convention for VM"
+  display_name         = "Naming-Convention-Assignment"
+
+  parameters = <<PARAMETERS
+{
+  "namePattern": {
+    "value": "demo-???-####"
+  }
+}
+PARAMETERS
+}
