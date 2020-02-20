@@ -12,7 +12,7 @@ data "template_file" "requiredTag_policy_rule" {
         "exists": "true"
     },
     "then": {
-        "effect": "audit"
+        "effect": "disabled"
     }
 }
 POLICY_RULE
