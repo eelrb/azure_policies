@@ -53,7 +53,7 @@ resource "azurerm_policy_definition" "blee-policy-2" {
 }
 
 resource "azurerm_policy_definition" "blee-policy-3" {
-  name         = "blee-policy-3"
+  name         = "blee-policy-4"
   display_name = "Audit a Required Tag on a Resource"
   description  = "Audit all resources for a required tag"
   policy_type  = "Custom"
