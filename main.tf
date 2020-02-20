@@ -32,7 +32,7 @@ data "template_file" "requiredTag_policy_parameters" {
 PARAMETERS
 }
 
-resource "azurerm_policy_definition" "requiredTag" {
+resource "azurerm_policy_definition" "blee-requiredTag" {
   name         = "Audit-RequiredTag-Resource"
   display_name = "Audit a Required Tag on a Resource"
   description  = "Audit all resources for a required tag"
