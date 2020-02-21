@@ -1,8 +1,3 @@
-provider "azurerm" {
-  # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
-  version = "=1.44.0"
-}
-
 data "template_file" "requiredTag_policy_rule_1" {
   template = <<POLICY_RULE
 {
