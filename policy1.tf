@@ -19,7 +19,7 @@ data "template_file" "requiredTag_policy_parameters_1" {
         "type": "String",
         "metadata": {
             "displayName": "Tag Name",
-            "description": "Name of the tag, such as 'environment'"
+            "description": "Name of tag, such as 'environment'"
         }
     }
 }
@@ -31,7 +31,7 @@ resource "azurerm_policy_definition" "blee-policy-1" {
   display_name = "Audit a Required Tag on a Resource"
   description  = "Audit all resources for a required tag"
   policy_type  = "Custom"
-  mode         = "Indexed"
+  mode         = "All"
   policy_rule  = "${data.template_file.requiredTag_policy_rule_1.rendered}"
   parameters   = "${data.template_file.requiredTag_policy_parameters_1.rendered}"
 }
