@@ -28,7 +28,7 @@ PARAMETERS
 
 resource "azurerm_policy_definition" "blee-policy-1" {
   name         = "blee-policy-1"
-  display_name = "Policy-1"
+  display_name = "SAP-Policy-1"
   description  = "Policy-1-Description"
   policy_type  = "Custom"
   mode         = "All"
