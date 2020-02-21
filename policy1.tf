@@ -3,7 +3,7 @@ provider "azurerm" {
   version = "=1.44.0"
 }
 
-data "template_file" "requiredTag_policy_rule" {
+data "template_file" "requiredTag_policy_rule_1" {
   template = <<POLICY_RULE
 {
     "if": {
@@ -17,7 +17,7 @@ data "template_file" "requiredTag_policy_rule" {
 POLICY_RULE
 }
 
-data "template_file" "requiredTag_policy_parameters" {
+data "template_file" "requiredTag_policy_parameters_1" {
   template = <<PARAMETERS
 {
     "tagName": {
@@ -37,6 +37,6 @@ resource "azurerm_policy_definition" "blee-policy-1" {
   description  = "Audit all resources for a required tag"
   policy_type  = "Custom"
   mode         = "All"
-  policy_rule  = "${data.template_file.requiredTag_policy_rule.rendered}"
-  parameters   = "${data.template_file.requiredTag_policy_parameters.rendered}"
+  policy_rule  = "${data.template_file.requiredTag_policy_rule_1.rendered}"
+  parameters   = "${data.template_file.requiredTag_policy_parameters_1.rendered}"
 }
