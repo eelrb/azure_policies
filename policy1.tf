@@ -28,8 +28,8 @@ PARAMETERS
 
 resource "azurerm_policy_definition" "blee-policy-1" {
   name         = "blee-policy-1"
-  display_name = "Audit a Required Tag on a Resource"
-  description  = "Audit all resources for a required tag"
+  display_name = "Policy-1"
+  description  = "Policy-1-Description"
   policy_type  = "Custom"
   mode         = "All"
   policy_rule  = "${data.template_file.requiredTag_policy_rule_1.rendered}"
